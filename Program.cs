@@ -14,13 +14,13 @@ namespace stringsChangerApp
             string inputString = "bababvavav";
             string templateString = "01010";
 
-            //Convert input string to 1 and 0, vowels become 1, rest 0s
+            // Convert input string to 1 and 0, vowels become 1, rest 0s
             string newString;
 
-            //replace all vowels with 1's
+            // replace all vowels with 1's
             newString = Regex.Replace(inputString, "[eioyau]", "1", RegexOptions.IgnoreCase);
              
-            //replace all the rest chars with 0s
+            // replace all the rest chars with 0s
             newString = Regex.Replace(newString, "[qwrtplkhjgfdszxcvbnm]", "0", RegexOptions.IgnoreCase);
 
             Console.WriteLine(inputString);
